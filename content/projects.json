@@ -1,0 +1,127 @@
+[
+  {
+    "id": "foregrounds",
+    "category": "research",
+    "number": "01",
+    "title": "Galactic foregrounds & CMB delensing",
+    "summary": "Finding a faint signal behind our Galaxy.",
+    "status": "Research",
+    "tags": "CMB lensing / Component separation",
+    "sections": {
+      "Scientific question": "How do residual Galactic foregrounds affect reconstructed CMB lensing and the removal of lensing-induced B modes?",
+      "Why it matters": "The search for primordial gravitational waves requires separating an extremely faint cosmological signal from brighter emission and lensing effects.",
+      "My contribution": "Developing simulation and analysis workflows to study foreground residuals, lensing reconstruction, and their propagation into parameter inference.",
+      "Methods & tools": "Python, CMB simulations, component separation, quadratic lensing estimators, and likelihood-based inference.",
+      "Results & evidence": "Quantitative results and publication details will be added alongside the corresponding figures and verified references.",
+      "Transferable skills": "Signal extraction, uncertainty propagation, reproducible simulations, and statistical validation."
+    },
+    "links": []
+  },
+  {
+    "id": "tomographic-delensing",
+    "category": "research",
+    "number": "02",
+    "title": "Tomographic delensing with LSST \u00d7 SO",
+    "summary": "Using the galaxy distribution to understand CMB lensing.",
+    "status": "Research",
+    "tags": "Large-scale structure / Bayesian inference",
+    "sections": {
+      "Scientific question": "How can galaxy surveys split into redshift slices improve CMB delensing?",
+      "Why it matters": "Different observations contain complementary information about the matter that bends CMB light. Combining them can improve the recovery of a primordial signal.",
+      "My contribution": "Developing a tomographic delensing workflow using LSST galaxy tracers and Simons Observatory CMB observations.",
+      "Methods & tools": "Cross-correlations, tomographic galaxy bins, tracer weighting, simulations, and statistical inference.",
+      "Results & evidence": "Results and supporting figures are pending addition to this portfolio.",
+      "Limitations & next steps": "Assess sensitivity to photometric redshift uncertainty and galaxy bias modeling."
+    },
+    "links": []
+  },
+  {
+    "id": "psf-modeling",
+    "category": "research",
+    "number": "03",
+    "title": "Point-spread function modeling",
+    "summary": "Understanding how an instrument shapes the light we measure.",
+    "status": "Scientific computing",
+    "tags": "Image analysis / Model fitting",
+    "sections": {
+      "Scientific question": "How can point-spread function models support reliable measurements of astronomical sources?",
+      "Why it matters": "The response of an imaging system changes the appearance of a source and affects the accuracy of extracted measurements.",
+      "My contribution": "Scientific computing work on PSF modeling and astronomical image analysis.",
+      "Methods & tools": "Image processing, numerical modeling, fitting, and residual analysis.",
+      "Results & evidence": "Add the verified paper record and residual-comparison figures here."
+    },
+    "links": []
+  },
+  {
+    "id": "dynamo",
+    "category": "research",
+    "number": "04",
+    "title": "2D dynamo simulation",
+    "summary": "Exploring magnetic-field evolution through numerical models.",
+    "status": "Scientific computing",
+    "tags": "Numerical simulation / Python bindings",
+    "sections": {
+      "Scientific question": "How can a two-dimensional dynamo model help investigate magnetic-field evolution and tachocline confinement?",
+      "Why it matters": "Numerical experiments make it possible to explore the interaction of flows and magnetic fields over time.",
+      "My contribution": "Developing a simulation project with an object-oriented C++ implementation, Python bindings, and an interactive visualization interface.",
+      "Methods & tools": "C++, Python, numerical methods, and simulation visualization.",
+      "Results & evidence": "Implementation and validation status will be documented with the project repository.",
+      "Limitations & next steps": "Add benchmark comparisons, input descriptions, and simulation animations."
+    },
+    "links": []
+  },
+  {
+    "id": "retention",
+    "category": "industry",
+    "number": "01",
+    "title": "Customer Retention Decision Analytics",
+    "summary": "Turning churn risk into better retention decisions.",
+    "status": "In development",
+    "tags": "SQL / Explainable ML / Experimentation",
+    "sections": {
+      "Problem & intended user": "Help an analytics team understand customer churn and evaluate retention interventions.",
+      "Data & workflow": "A planned workflow connects SQL analysis with feature exploration, PCA, churn modeling, SHAP explanations, and A/B testing.",
+      "Design decisions": "Separate prediction from intervention evaluation: a high churn score alone does not establish that an intervention will work.",
+      "Evaluation approach": "Use held-out discrimination and calibration checks, segment-level error analysis, and experiment uncertainty estimates.",
+      "Results & evidence": "No verified benchmark results are published here yet.",
+      "Limitations & next steps": "Document the dataset, complete reproducible evaluation, and publish decision-oriented findings."
+    },
+    "links": []
+  },
+  {
+    "id": "paywatch",
+    "category": "industry",
+    "number": "02",
+    "title": "PayWatch",
+    "summary": "From transaction streams to auditable fraud signals.",
+    "status": "In development",
+    "tags": "Kafka / LSTM / FastAPI",
+    "sections": {
+      "Problem & intended user": "Help a fraud-monitoring team prioritize suspicious transactions and inspect scoring decisions.",
+      "Data & workflow": "The planned pipeline combines Kafka ingestion, an LSTM autoencoder, XGBoost scoring, ONNX Runtime, FastAPI, and PostgreSQL logging.",
+      "Design decisions": "Evaluate a two-stage scoring design to balance computational cost with the risk of missing fraudulent events during anomaly triage.",
+      "Evaluation approach": "Measure fraud recall, precision, false negatives at the triage stage, end-to-end latency, and behavior under delayed or duplicate events.",
+      "Results & evidence": "Latency and filtering targets are not reported as achieved results. Verified measurements are pending.",
+      "Limitations & next steps": "Complete end-to-end validation, establish baselines, and document drift monitoring and failure recovery."
+    },
+    "links": []
+  },
+  {
+    "id": "disasterlens",
+    "category": "industry",
+    "number": "03",
+    "title": "DisasterLens",
+    "summary": "Making image classification reproducible from training to deployment.",
+    "status": "In development",
+    "tags": "PyTorch / ResNet50 / CI/CD",
+    "sections": {
+      "Problem & intended user": "Explore disaster image classification with a reproducible machine-learning workflow and an interactive demonstration.",
+      "Data & workflow": "AIDERv2 imagery, ResNet50 in PyTorch, preprocessing, augmentation, class-imbalance handling, and a planned interactive application.",
+      "Design decisions": "Treat evaluation and deployment checks as part of the model lifecycle. Keep training, inference, and application responsibilities separate.",
+      "Evaluation approach": "Use independent data splits, per-class precision and recall, confusion matrices, and failure-case inspection.",
+      "Results & evidence": "Model results and CI/CD execution evidence will be added after validation.",
+      "Limitations & next steps": "Document dataset limitations, verify automated tests, and publish a reproducible model and demo."
+    },
+    "links": []
+  }
+]

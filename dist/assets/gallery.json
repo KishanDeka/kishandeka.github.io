@@ -1,0 +1,54 @@
+[
+  {
+    "id": "foregrounds",
+    "title": "The sky, separated",
+    "project": "foregrounds",
+    "label": "CMB FOREGROUNDS",
+    "category": "CMB",
+    "type": "placeholder",
+    "src": null,
+    "thumbnail": null,
+    "poster": null,
+    "alt": "The sky, separated — media placeholder",
+    "caption": "Space reserved for your foreground, cleaned CMB, and residual-map comparison."
+  },
+  {
+    "id": "tomographic-delensing",
+    "title": "Mapping matter across redshift",
+    "project": "tomographic-delensing",
+    "label": "TOMOGRAPHIC DELENSING",
+    "category": "Large-scale structure",
+    "type": "placeholder",
+    "src": null,
+    "thumbnail": null,
+    "poster": null,
+    "alt": "Mapping matter across redshift — media placeholder",
+    "caption": "Space reserved for your galaxy-bin maps and delensing visualizations."
+  },
+  {
+    "id": "dynamo",
+    "title": "Magnetic fields in motion",
+    "project": "dynamo",
+    "label": "2D DYNAMO",
+    "category": "Simulation",
+    "type": "placeholder",
+    "src": null,
+    "thumbnail": null,
+    "poster": null,
+    "alt": "Magnetic fields in motion — media placeholder",
+    "caption": "Space reserved for your dynamo simulation GIF or video."
+  },
+  {
+    "id": "psf-modeling",
+    "title": "A closer look at the residuals",
+    "project": "psf-modeling",
+    "label": "PSF MODELING",
+    "category": "Imaging",
+    "type": "placeholder",
+    "src": null,
+    "thumbnail": null,
+    "poster": null,
+    "alt": "A closer look at the residuals — media placeholder",
+    "caption": "Space reserved for your PSF model and image-residual comparison."
+  }
+]
