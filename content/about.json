@@ -1,41 +1,109 @@
 {
   "education": [
-    {"dates":"2022–present","title":"PhD research in cosmology","institution":"National Centre for Nuclear Research · Warsaw, Poland","description":"Supervisor: dr. hab. Paweł Bielewicz. CMB lensing reconstruction, delensing, Galactic foregrounds, and cross-correlations with galaxy surveys."},
-    {"dates":"2017–2022","title":"Integrated B.Sc.–M.Sc. in Physics","institution":"National Institute of Science Education and Research · Bhubaneswar, India","description":"Mathematics minor. Master’s research on a PSF photometry pipeline for the WALOP instrument, supervised by Dr. Tuhin Ghosh and Prof. A. N. Ramaprakash."}
+    {
+      "dates": "October 2022–present",
+      "title": "Doctoral student · Cosmology",
+      "institution": "National Centre for Nuclear Research · Warsaw, Poland",
+      "description": "Supervisor: dr. hab. Paweł Bielewicz. Research on CMB weak lensing, foreground contamination, and cross-correlations with large-scale structure."
+    },
+    {
+      "dates": "July 2017–May 2022",
+      "title": "Integrated M.Sc. in Physics · Five-year programme",
+      "institution": "National Institute of Science Education and Research · Bhubaneswar, India",
+      "description": "Minor in Mathematics. Master’s thesis on PSF photometry methods for the WALOP instrument, supervised by Dr. Tuhin Ghosh and Prof. A. N. Ramaprakash."
+    }
   ],
   "experience": [
-    {"dates":"2022–present","title":"Cosmology & scientific computing","institution":"National Centre for Nuclear Research","description":"End-to-end sky simulations, signal and noise modeling, component separation, lensing reconstruction, and Bayesian parameter inference. Large simulation datasets and systematic-error validation are central to my work."},
-    {"dates":"2021–2022","title":"Master’s research · WALOP photometry","institution":"NISER Bhubaneswar","description":"Developed point-spread function modeling and image-processing workflows for source extraction and flux measurements."},
-    {"dates":"2020–2021","title":"Magnetic helicity in thermal dust polarization","institution":"NISER Bhubaneswar","description":"Research supervised by Dr. Tuhin Ghosh."},
-    {"dates":"2019","title":"Viscous Landau hydrodynamics","institution":"NISER Bhubaneswar","description":"Research on heavy-ion collisions supervised by Dr. Amaresh Jaiswal."}
+    {
+      "dates": "2022–present",
+      "title": "Cosmology & scientific computing",
+      "institution": "National Centre for Nuclear Research",
+      "description": "End-to-end sky simulations, signal and noise modeling, component separation, lensing reconstruction, and Bayesian parameter inference. Large simulation datasets and systematic-error validation are central to my work."
+    },
+    {
+      "dates": "2021–2022",
+      "title": "Master’s research · WALOP photometry",
+      "institution": "NISER Bhubaneswar",
+      "description": "Developed point-spread function modeling and image-processing workflows for source extraction and flux measurements."
+    },
+    {
+      "dates": "2020–2021",
+      "title": "Magnetic helicity in thermal dust polarization",
+      "institution": "NISER Bhubaneswar",
+      "description": "Research supervised by Dr. Tuhin Ghosh."
+    },
+    {
+      "dates": "2019",
+      "title": "Viscous Landau hydrodynamics",
+      "institution": "NISER Bhubaneswar",
+      "description": "Research on heavy-ion collisions supervised by Dr. Amaresh Jaiswal."
+    }
   ],
-  "visits": ["SISSA, Trieste · March 2026", "LAM, Marseille · November 2025", "Lawrence Berkeley National Laboratory · September–November 2024"],
-  "awards": ["STSM Grant, Cosmoverse COST Action (CA21136) · 2026", "STER Fellowship, NAWA, Poland · 2023–2024", "INSPIRE Fellowship, Department of Science and Technology, India · 2017–2022"],
+  "visits": [
+    "SISSA, Trieste · March 2026",
+    "LAM, Marseille · November 2025",
+    "Lawrence Berkeley National Laboratory · September–November 2024"
+  ],
+  "awards": [
+    "NAWA STER Fellowship · 2023–present (as listed in CV)",
+    "INSPIRE Fellowship, Department of Science and Technology, India · 2017–2022",
+    "Anundoram Baruah Award, Government of Assam, India · December 2015"
+  ],
   "skills": [
-    {"name":"Python","category":"Languages","icon":"python/python-original.svg","mark":"Py"},
-    {"name":"C++","category":"Languages","icon":"cplusplus/cplusplus-original.svg","mark":"C++"},
-    {"name":"Fortran","category":"Languages","icon":"fortran/fortran-original.svg","mark":"F"},
-    {"name":"SQL","category":"Languages","icon":"azuresqldatabase/azuresqldatabase-original.svg","mark":"SQL"},
-    {"name":"Bash","category":"Languages","icon":"bash/bash-original.svg","mark":"$_"},
-    {"name":"pandas","category":"Libraries","icon":"pandas/pandas-original.svg","mark":"pd"},
-    {"name":"scikit-learn","category":"Libraries","icon":"scikitlearn/scikitlearn-original.svg","mark":"sk"},
-    {"name":"PyTorch","category":"Libraries","icon":"pytorch/pytorch-original.svg","mark":"PT"},
-    {"name":"Astropy","category":"Libraries","mark":"Ast"},
-    {"name":"HEALPix","category":"Libraries","mark":"HP"},
-    {"name":"CAMB","category":"Libraries","mark":"C"},
-    {"name":"PySM","category":"Libraries","mark":"PySM"},
-    {"name":"emcee","category":"Libraries","mark":"mc"},
-    {"name":"plancklens","category":"Libraries","mark":"pl"},
-    {"name":"lenspyx","category":"Libraries","mark":"lx"},
-    {"name":"NaMaster","category":"Libraries","mark":"Na"},
-    {"name":"GLASS","category":"Libraries","mark":"G"},
-    {"name":"Cobaya","category":"Libraries","mark":"Co"},
-    {"name":"Git","category":"Tools","icon":"git/git-original.svg","mark":"Git"},
-    {"name":"Linux","category":"Tools","icon":"linux/linux-original.svg","mark":"Lx"},
-    {"name":"HPC","category":"Tools","mark":"HPC"},
-    {"name":"Streamlit","category":"Tools","icon":"streamlit/streamlit-original.svg","mark":"St"},
-    {"name":"GitHub Actions","category":"Tools","icon":"githubactions/githubactions-original.svg","mark":"CI"},
-    {"name":"LaTeX","category":"Tools","icon":"latex/latex-original.svg","mark":"TeX"},
-    {"name":"Mathematica","category":"Tools","mark":"M"}
+    {
+      "name": "Python",
+      "category": "Languages",
+      "mark": "Py"
+    },
+    {
+      "name": "Fortran",
+      "category": "Languages",
+      "mark": "F"
+    },
+    {
+      "name": "C++",
+      "category": "Languages",
+      "mark": "C++"
+    },
+    {
+      "name": "HEALPix",
+      "category": "Libraries",
+      "mark": "HP"
+    },
+    {
+      "name": "CAMB",
+      "category": "Libraries",
+      "mark": "C"
+    },
+    {
+      "name": "COBAYA",
+      "category": "Libraries",
+      "mark": "Co"
+    },
+    {
+      "name": "GLASS",
+      "category": "Libraries",
+      "mark": "G"
+    },
+    {
+      "name": "Plancklens",
+      "category": "Libraries",
+      "mark": "pl"
+    },
+    {
+      "name": "Mathematica",
+      "category": "Tools",
+      "mark": "M"
+    },
+    {
+      "name": "GNUplot",
+      "category": "Tools",
+      "mark": "gp"
+    },
+    {
+      "name": "LaTeX",
+      "category": "Tools",
+      "mark": "TeX"
+    }
   ]
 }

@@ -6,7 +6,7 @@
     const dots = [...root.querySelectorAll('[data-slide]')];
     const play = root.querySelector('[data-play]');
     const windowEl = root.querySelector('.slide-window');
-    let index = 0, paused = motion.matches, hovered = false, focused = false, visible = true, timer, touch;
+    let index = 0, paused = true, hovered = false, focused = false, visible = true, timer, touch;
     const playingVideo = () => slides.some(s => [...s.querySelectorAll('video')].some(v => !v.paused));
     function playLabel() {
       play.textContent = paused ? 'Play' : 'Pause';
