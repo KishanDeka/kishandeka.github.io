@@ -1,6 +1,6 @@
 # Kishan Deka — Research & Engineering
 
-A minimal, light-theme editorial portfolio for computational cosmology and industry-facing data projects. Built with semantic HTML, CSS, vanilla JavaScript, and a small dependency-free Node.js generator. Ready for GitHub Pages at **https://kishandeka.github.io/**.
+A minimal, light-theme editorial portfolio for computational cosmology and industry-facing data projects. Built with semantic HTML, CSS, vanilla JavaScript, and a small dependency-free Node.js generator. Ready for GitHub Pages at https://kishandeka.github.io/.
 
 ## What is included
 
@@ -11,7 +11,7 @@ A minimal, light-theme editorial portfolio for computational cosmology and indus
 - **Contact:** working professional profile and email links with icons.
 - **Media gallery:** the original topic filter and accessible image/video lightbox, ready for actual scientific media.
 
-All GitHub buttons currently open **https://github.com/KishanDeka/**, as requested. Project-specific repositories can be added later. Research and industry slider visuals are **workflow schematics**, not fabricated scientific figures or measured results. The supplied original documents are included unchanged.
+All GitHub buttons currently open https://github.com/KishanDeka/, as requested. Project-specific repositories can be added later. Research and industry slider visuals are **workflow schematics**, not fabricated scientific figures or measured results. The supplied original documents are included unchanged.
 
 ## Run locally
 
@@ -58,19 +58,19 @@ Rebuild after changing JSON content or page templates. CSS and client JavaScript
 │   │   ├── media/demo-portrait.png
 │   │   └── favicon.svg
 │   └── documents/
-│       ├── cv_kishan.pdf
-│       └── Kishan_Deka_Industry_Resume.pdf
+│       ├── Academic_CV.pdf
+│       └── Industry_Resume.pdf
 ├── ASSETS.md
 └── package.json
 ```
 
 ## Host on GitHub Pages
 
-1. Create a repository called **`KishanDeka.github.io`** in your GitHub account.
+1. Create a repository called **`USERNAME.github.io`** in your GitHub account.
 2. Extract this ZIP and upload everything **inside** its `kishan-deka-portfolio` folder to the repository root, including `.github`. Do not upload the ZIP itself or add an extra enclosing folder.
 3. In repository **Settings → Pages → Build and deployment**, choose **GitHub Actions**.
 4. Push to the `main` branch. The included workflow builds, validates, and deploys `dist`.
-5. After the workflow succeeds, visit **https://kishandeka.github.io/**.
+5. After the workflow succeeds, visit **https://USERNAME.github.io/**.
 
 For an existing local clone:
 
