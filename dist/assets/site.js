@@ -1,5 +1,17 @@
 (() => {
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('[data-animated-src]').forEach(img => {
+    function updateAnimation() {
+      img.hidden = motion.matches;
+      const note = img.parentElement.querySelector('.motion-note');
+      if (note) note.hidden = !motion.matches;
+      if (motion.matches) img.removeAttribute('src');
+      else img.src = img.dataset.animatedSrc;
+    }
+    motion.addEventListener('change', updateAnimation);
+    updateAnimation();
+  });
+
   document.querySelectorAll('[data-carousel]').forEach(root => {
     const slides = [...root.querySelectorAll('.slide')];
     const track = root.querySelector('.slide-track');

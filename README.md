@@ -179,3 +179,7 @@ Both profile sliders start automatically, except when reduced motion is requeste
 CSS and JavaScript URLs include content hashes so changed assets receive new browser cache keys. Mouse focus no longer prevents autoplay resuming after hover; visible keyboard focus still pauses the carousel. Run `node scripts/check-carousel.mjs` for deterministic timer and interaction checks using a DOM harness (not a browser audit).
 
 Upload the entire project and wait for the GitHub Pages workflow to finish. Hard-refresh once if your browser still displays a previously cached HTML page.
+
+## Research graphics
+
+The four supplied figures are now mapped in content/gallery.json: ccd_psf_new.png → PSF photometry; hilc_exp.png → CMB foregrounds; dynamo-demo.gif → MHD/dynamo; pipeline_optimal.png → SO × LSST. Original bytes are preserved. They appear in the profile research slider, research cards, project pages, and expandable gallery. Figures are contained on white backgrounds to preserve labels and diagram transparency. The GIF animates for ordinary motion settings; reduced-motion visitors can explicitly open it from the gallery.

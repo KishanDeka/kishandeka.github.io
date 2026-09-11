@@ -1,54 +1,54 @@
 [
   {
     "id": "foregrounds",
-    "title": "The sky, separated",
+    "title": "Multi-frequency CMB foreground maps",
     "project": "foregrounds",
     "label": "CMB FOREGROUNDS",
     "category": "CMB",
-    "type": "placeholder",
-    "src": null,
-    "thumbnail": null,
+    "type": "image",
+    "src": "assets/media/hilc_exp.png",
+    "thumbnail": "assets/media/hilc_exp.png",
     "poster": null,
-    "alt": "The sky, separated — media placeholder",
-    "caption": "Space reserved for your foreground, cleaned CMB, and residual-map comparison."
+    "alt": "Six masked sky maps at 30, 40, 95, 145, 220, and 270 GHz, each labeled with its frequency weight.",
+    "caption": "Multi-frequency sky maps illustrating the inputs and frequency weights used in component separation."
   },
   {
     "id": "tomographic-delensing",
-    "title": "Mapping matter across redshift",
+    "title": "SO × LSST delensing pipeline",
     "project": "tomographic-delensing",
     "label": "TOMOGRAPHIC DELENSING",
     "category": "Large-scale structure",
-    "type": "placeholder",
-    "src": null,
-    "thumbnail": null,
+    "type": "image",
+    "src": "assets/media/pipeline_optimal.png",
+    "thumbnail": "assets/media/pipeline_optimal.png",
     "poster": null,
-    "alt": "Mapping matter across redshift — media placeholder",
-    "caption": "Space reserved for your galaxy-bin maps and delensing visualizations."
+    "alt": "Diagram connecting multi-frequency CMB maps, foreground cleaning, lensing reconstruction, a galaxy catalogue and photo-z calibration to delensed B maps and tensor-to-scalar ratio inference.",
+    "caption": "Analysis workflow combining CMB observations and galaxy information for delensing and likelihood inference."
   },
   {
     "id": "dynamo",
-    "title": "Magnetic fields in motion",
+    "title": "MHD: toroidal magnetic-field evolution",
     "project": "dynamo",
     "label": "2D DYNAMO",
     "category": "Simulation",
-    "type": "placeholder",
-    "src": null,
+    "type": "gif",
+    "src": "assets/media/dynamo-demo.gif",
     "thumbnail": null,
     "poster": null,
-    "alt": "Magnetic fields in motion — media placeholder",
-    "caption": "Space reserved for your dynamo simulation GIF or video."
+    "alt": "Animated meridional plot of the toroidal magnetic field with angular coordinates from 0 to 180 degrees and simulation time.",
+    "caption": "Evolution of the toroidal magnetic field in the dynamo simulation."
   },
   {
     "id": "psf-modeling",
-    "title": "A closer look at the residuals",
+    "title": "PSF photometry across the CCD",
     "project": "psf-modeling",
     "label": "PSF MODELING",
     "category": "Imaging",
-    "type": "placeholder",
-    "src": null,
-    "thumbnail": null,
+    "type": "image",
+    "src": "assets/media/ccd_psf_new.png",
+    "thumbnail": "assets/media/ccd_psf_new.png",
     "poster": null,
-    "alt": "A closer look at the residuals — media placeholder",
-    "caption": "Space reserved for your PSF model and image-residual comparison."
+    "alt": "Five sampled positions on a 4096 by 4096 CCD and corresponding PSF images labeled PSF-2, PSF-3, PSF-1, PSF-5, and PSF-4.",
+    "caption": "Point-spread functions at five detector positions, illustrating spatial variation across the CCD."
   }
 ]

@@ -32,3 +32,12 @@ h1{font-size:clamp(2.8rem,5.5vw,4.75rem);letter-spacing:-.045em}h1 em{font-style
 .hero{padding-top:42px;padding-bottom:42px}
 .page-heading{padding-top:38px;padding-bottom:32px}
 .about-intro h2{font-size:1.65rem}
+
+/* Original scientific figures: preserve full panels, labels and transparent diagrams. */
+.slide-visual:has(.project-image),.card-visual:has(.project-image),.detail-visual:has(.project-image){background:#fff}
+.slide-visual>.project-image{height:350px;min-height:0;max-height:none;align-self:center;object-fit:contain;padding:12px}
+.animated-figure{width:100%;background:#fff;display:flex;align-items:center;justify-content:center;min-height:285px}
+.animated-figure .project-image{width:100%;height:350px;object-fit:contain;padding:12px}
+.motion-note{color:#5d6272;padding:25px}
+.gallery-stage,.modal-media{background:#fff}
+@media(max-width:780px){.slide-visual>.project-image,.animated-figure .project-image{height:285px}}
