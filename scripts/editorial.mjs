@@ -411,7 +411,7 @@ const renderRecordList = (records) => {
 
 renderPage(
   'publications/',
-  'Publications & talks',
+  'Publications & Talks',
   'Selected papers, conference presentations, and invited seminars.',
   `${renderPageHeading('PUBLICATIONS & TALKS', 'Publications & talks', 'Papers, invited seminars, and conference presentations in cosmology and theoretical physics.')}
    <div class="page-jumps">
@@ -469,11 +469,11 @@ renderPage(
   'About',
   'Education, experience, technical expertise, academic CV, and industry resume.',
   `${renderPageHeading('ABOUT', 'About', 'I’m a cosmology researcher with over six years of Python experience, working at the intersection of physics, statistical inference, and large-scale data analysis.')}
-   <section class="about-intro">
-     <h2>Background</h2>
-     <div>
-       <p> My PhD focuses on weak gravitational lensing of the cosmic microwave background, Galactic foregrounds, B-mode delensing, and cross-correlations with large-scale structure. I build end-to-end simulations and analysis pipelines to understand both the signal and the uncertainty behind a result.</p>
-       <p> I am also developing projects in data analytics, machine learning, and data engineering. I bring a strong analytical background, careful debugging, and experience communicating technical findings to international audiences.</p>
+   <section class="content-section">
+     <!-- <h1>About</h1> -->
+     <!-- <div> -->
+       <p> My PhD focuses on weak gravitational lensing of the cosmic microwave background, Galactic foregrounds, B-mode delensing, and cross-correlations with large-scale structure. I build end-to-end simulations and analysis pipelines to understand both the signal and the uncertainty behind a result. </p>
+       <p> I am also developing projects in data analytics, machine learning, and data engineering. I bring a strong analytical background, careful debugging, and experience communicating technical findings to international audiences. </p>
      </div>
    </section>
    <section class="content-section">
