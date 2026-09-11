@@ -202,12 +202,12 @@ const renderCarousel = (id, title, items, allRoute) => {
           <span data-count>01 / ${totalCount}</span>
           <button type="button" data-prev aria-label="Previous ${title.toLowerCase()} slide">←</button>
           <button type="button" data-next aria-label="Next ${title.toLowerCase()} slide">→</button>
+          <button type="button" data-play>Pause</button>
         </div>
       </div>
       <span class="sr-only" data-announcement aria-live="polite"></span>
     </section>`;
 };
-// <button type="button" data-play>Pause</button>
 
 const renderProjectCard = (project) => {
   return `
