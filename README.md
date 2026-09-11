@@ -1,10 +1,21 @@
 # Kishan Deka — Research & Engineering
 
-A professional static portfolio connecting computational cosmology with applied data science. Includes research and industry project pages, a filterable simulation carousel, an accessible native-dialog lightbox, publications, About/CV, and contact pages.
+A minimal, light-theme editorial portfolio for computational cosmology and industry-facing data projects. Built with semantic HTML, CSS, vanilla JavaScript, and a small dependency-free Node.js generator. Ready for GitHub Pages at **https://kishandeka.github.io/**.
+
+## What is included
+
+- **Profile:** short biography, a clearly labeled demo portrait, GitHub/LinkedIn/email/ORCID icons, and separate sliding showcases for selected research and industry projects.
+- **About:** education, research experience, filterable technical expertise, research visits, fellowships, teaching, and downloads of the supplied academic CV and industry resume.
+- **Research and Projects:** separate listings and seven individual project pages, each with a GitHub button.
+- **Publications & talks:** three publication records and ten talks/seminars from the academic CV.
+- **Contact:** working professional profile and email links with icons.
+- **Media gallery:** the original topic filter and accessible image/video lightbox, ready for actual scientific media.
+
+All GitHub buttons currently open **https://github.com/KishanDeka/**, as requested. Project-specific repositories can be added later. Research and industry slider visuals are **workflow schematics**, not fabricated scientific figures or measured results. The supplied original documents are included unchanged.
 
 ## Run locally
 
-Requirements: Node.js 22+ and Python 3 for the optional local server. There are no npm dependencies and no install step.
+Requirements: Node.js 22+; Python 3 for the optional local server. No npm packages or installation are required.
 
 ```bash
 npm run build
@@ -12,56 +23,112 @@ npm run check
 npm run preview
 ```
 
-Open http://localhost:8080. Use a server rather than opening HTML files directly: the gallery loads JSON using fetch. Stop with Ctrl+C. Rebuild after editing content or the page templates. CSS and gallery JavaScript live directly in `dist/assets` and do not require rebuilding. **Do not delete dist:** it contains authored assets as well as generated HTML.
+Open `http://localhost:8080`. Stop the server with Ctrl+C. Serve the website instead of opening HTML files directly: the media gallery loads local JSON.
 
-## Project structure
+Rebuild after changing JSON content or page templates. CSS and client JavaScript are authored directly in `dist/assets` and take effect on refresh. **Do not delete `dist`: it contains authored assets and the PDF downloads, not just generated pages.**
 
-- `content/profile.json`: identity, description, contact links, CV paths, origin, and base path.
-- `content/projects.json`: research and industry entries, sections, statuses, and links.
-- `content/publications.json`: publications and talks.
-- `content/gallery.json`: ordered media entries. The supplied entries are explicit placeholders, not scientific results.
-- `scripts/build.mjs`: reusable HTML layout, card and page components; writes real directory-index pages.
-- `scripts/check.mjs`: validates generated local links and gallery references.
-- `dist/assets/style.css`: visual design and responsive styles.
-- `dist/assets/gallery.js`: carousel, keyboard/touch support, filtering, video pausing, and modal.
-- `dist/assets/media/`: place original media, posters, and optimized thumbnails here.
-- `dist/`: published site; commit it alongside the generator and content.
-- `.github/workflows/pages.yml`: builds, checks, and deploys to Pages on main.
+## Repository structure
 
-## Publish on GitHub Pages
-
-1. Create a GitHub repository named `YOUR_USERNAME.github.io` for a user site, or choose another repository name for a project site.
-2. Upload the contents of this source folder, including `.github`, to the repository's `main` branch. The source ZIP excludes internal preview configuration.
-3. In Settings → Pages → Build and deployment, choose **GitHub Actions**.
-4. Set `siteUrl` in `content/profile.json` to your origin, e.g. `https://YOUR_USERNAME.github.io` (no repository path). For local project-subpath checks, set `basePath` to `/REPOSITORY_NAME`; otherwise leave it empty. The workflow automatically uses the base path returned by GitHub Pages.
-5. Push to main, or run the workflow manually from Actions. Check the deployment result there.
-
-Reference: [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
-
-Each detail page is an actual `projects/ID/index.html`, so direct links and refreshes do not require SPA rewrite rules. The GitHub deployment is not performed by downloading this project; you must upload it to your own repository.
-
-## Update profile, contact links, and CVs
-
-Edit `content/profile.json`. Leave unavailable fields `null`; the site renders an honest unavailable state rather than a broken link. `email` is a bare email address; GitHub, LinkedIn, and scholar fields are complete HTTPS URLs.
-
-Place PDFs at `dist/assets/academic-cv.pdf` and `dist/assets/industry-resume.pdf`, then set `academicCV` to `assets/academic-cv.pdf` and `industryResume` to `assets/industry-resume.pdf`. Rebuild. Download links appear only when a path is configured. `siteUrl` enables canonical and Open Graph URL metadata; page titles and descriptions are always generated. An Open Graph image is intentionally omitted until a real share image is supplied.
-
-## Add a project
-
-Copy an entry in `content/projects.json`. Give it a unique lowercase, hyphen-separated `id`, use `category: "research"` or `"industry"`, and set its title, summary, status, tags, and ordered `sections` object. The listing, detail route, and appropriate navigation state are generated automatically. New projects also enter the corresponding home selection up to its displayed limit. Do not rename existing IDs without considering external links.
-
-Add links in this shape:
-
-```json
-"links": [{"label": "Source code", "url": "https://github.com/YOUR_USERNAME/YOUR_REPOSITORY"}]
+```text
+.
+├── .github/workflows/pages.yml  # GitHub Pages build/check/deploy
+├── content/
+│   ├── profile.json            # Identity, contacts, portrait, document paths
+│   ├── about.json              # Education, experience, skills, visits, awards
+│   ├── projects.json           # Seven research/industry projects
+│   ├── publications.json       # Papers and talks from the CV
+│   └── gallery.json            # Original research media configuration
+├── scripts/
+│   ├── build.mjs               # Build entrypoint
+│   ├── editorial.mjs           # Page templates and workflow schematics
+│   └── check.mjs               # Link, content, asset, and syntax checks
+├── dist/
+│   ├── index.html              # Profile
+│   ├── about/index.html
+│   ├── research/index.html
+│   ├── projects/               # Industry listing and individual project pages
+│   ├── publications/index.html
+│   ├── contact/index.html
+│   ├── gallery/index.html
+│   ├── 404.html
+│   ├── assets/
+│   │   ├── style.css
+│   │   ├── site.js             # Two independent sliders and skill filters
+│   │   ├── gallery.js          # Gallery filter, lightbox, video controls
+│   │   ├── media/demo-portrait.png
+│   │   └── favicon.svg
+│   └── documents/
+│       ├── cv_kishan.pdf
+│       └── Kishan_Deka_Industry_Resume.pdf
+├── ASSETS.md
+└── package.json
 ```
 
-Keep work in progress labeled. Publish numerical results only with a verified evaluation and supporting evidence. Current text describes research scope and intended project work; it does not claim unverified benchmark results.
+## Host on GitHub Pages
 
-## Add a figure, GIF, or video
+1. Create a repository called **`KishanDeka.github.io`** in your GitHub account.
+2. Extract this ZIP and upload everything **inside** its `kishan-deka-portfolio` folder to the repository root, including `.github`. Do not upload the ZIP itself or add an extra enclosing folder.
+3. In repository **Settings → Pages → Build and deployment**, choose **GitHub Actions**.
+4. Push to the `main` branch. The included workflow builds, validates, and deploys `dist`.
+5. After the workflow succeeds, visit **https://kishandeka.github.io/**.
 
-1. Copy the asset into `dist/assets/media/`.
-2. Add or replace an entry in `content/gallery.json` using this example:
+For an existing local clone:
+
+```bash
+git add .
+git commit -m "Add editorial portfolio"
+git push origin main
+```
+
+The archive does not contain Git history, credentials, or internal hosting configuration. It contains the complete source and built site. No GitHub repository was created or deployed on your behalf.
+
+The workflow also supports project repositories: it obtains the appropriate subpath from GitHub Pages. For local testing at a subpath:
+
+```bash
+BASE_PATH=/portfolio-test npm run build
+BASE_PATH=/portfolio-test npm run check
+# Restore the root-site output before normal local preview:
+npm run build
+```
+
+`siteUrl` in `content/profile.json` is the origin used for canonical metadata; `basePath` is empty for a user site. Each page has a real `index.html`, so direct links and refreshes work without SPA rewrite rules.
+
+## Replace the demo portrait
+
+The bundled illustration is an AI-generated **demo**, not a representation of Kishan. To use your own photo:
+
+1. Copy it to `dist/assets/media/portrait.jpg`.
+2. Change these fields in `content/profile.json`:
+
+```json
+"portrait": "assets/media/portrait.jpg",
+"portraitAlt": "Kishan Deka",
+"portraitIsDemo": false
+```
+
+3. Run `npm run build`. A vertical photo with centered head-and-shoulders framing works best.
+
+## Edit content and links
+
+Contact links, email, and document paths are in `content/profile.json`. The PDF paths are relative to `dist`. Replace the PDFs at those same paths to retain their download URLs.
+
+Education and skills are in `content/about.json`. Categories must be `Languages`, `Libraries`, or `Tools`. Each skill uses a branded icon when available and a local text mark otherwise. Devicon images load from a pinned external CDN; labels and text marks remain usable if offline or an image is unavailable. See `ASSETS.md`.
+
+Publication records and talk titles follow the supplied academic CV. They are not live-updated from external bibliographic services. The CV and industry resume give different GPA values; the website intentionally omits GPA. PhD status remains ongoing, consistent with the supplied CV; change it when the degree is awarded.
+
+For a project-specific GitHub button, add a `github` field to that project in `content/projects.json`:
+
+```json
+"github": "https://github.com/KishanDeka/your-repository"
+```
+
+Alternatively, add a repository URL to its `links` array. The explicit `github` field takes precedence. Otherwise the button opens the configured GitHub profile without pretending it is a specific repository.
+
+The project lists and homepage showcases derive from `category: "research"` or `"industry"`. Project IDs remain stable to preserve existing URLs. Change project text, statuses, and sections in the same file. Publication numerical claims should be accompanied by actual results rather than portfolio placeholders.
+
+## Replace workflow diagrams with research graphics
+
+Copy a figure to `dist/assets/media/`, then set the corresponding entry in `content/gallery.json`:
 
 ```json
 {
@@ -72,49 +139,29 @@ Keep work in progress labeled. Publish numerical results only with a verified ev
   "category": "CMB",
   "type": "image",
   "src": "assets/media/foreground-comparison.webp",
-  "thumbnail": "assets/media/foreground-comparison-thumb.webp",
+  "thumbnail": null,
   "poster": null,
-  "alt": "Describe the panels, axes, quantities, and visually important result.",
-  "caption": "Describe what this figure shows, including units and simulation assumptions."
+  "alt": "Describe the panels, axes, and quantities shown.",
+  "caption": "Describe the actual simulation conditions and result."
 }
 ```
 
-Use `image` for static images, `gif` for GIFs, and `video` (or `mp4`/`webm`) for videos. MP4 and WebM are handled through the native video element. Supply a static `poster` for videos and GIFs, especially for reduced-motion visitors. Use small static WebP/JPEG/PNG thumbnails; never use the full GIF as its thumbnail. Prefer video for large animations to reduce transfer size. Convert media with your preferred scientific export or video tooling; no automatic transcoding is performed.
+After rebuilding, the first configured non-placeholder media item for a project replaces its workflow schematic on the profile, listing, and detail page. The same mechanism supports industry projects: add an entry whose `project` matches their ID.
 
-The array order determines slide order. Filters are derived automatically from `category`. `project` must match an existing project ID. Paths are relative to dist and get the deployment subpath automatically. The main asset is loaded only for the selected slide; thumbnails are lazy-loaded. Native videos expose controls, use metadata preloading, and pause when the gallery leaves view, the tab is hidden, a slide changes, or the lightbox closes. GIFs cannot be paused like videos; reduced-motion mode shows a poster or a click-to-play placeholder until explicitly opened.
+Types: `image`, `gif`, or `video` (`mp4` and `webm` also accepted). Prefer video over large GIFs, and supply a static `poster` for moving media. Inline showcase GIFs use their poster when supplied; the gallery provides the enlarged media. Videos have native controls and pause when leaving the current slide or viewport, or when the tab is hidden. Images use `object-fit: contain` to protect scientific axes and legends. Original gallery entries remain clearly labeled media placeholders until supplied.
 
-Click a figure to enlarge it, or use Enlarge on a video. Escape closes the dialog and restores focus. Use left/right arrows while focused in the gallery, touch swipe on non-video media, or the previous/next and thumbnail buttons. No automatic slide advancement occurs. The separate Explore project link opens its detail page. Media uses `object-fit: contain` so axes and legends remain visible.
+## Motion and accessibility
 
-If no media is available yet, leave `type: "placeholder"` and `src: null`. These are intentional labeled slots, not fabricated figures. Project pages link to the complete media gallery.
+- The two homepage carousels run independently, advancing every 5.5 seconds when visible and not hovered or keyboard-focused.
+- Previous/next buttons, slide selectors, left/right keyboard navigation, horizontal touch swipe, and explicit Play/Pause controls are included.
+- Autoplay starts disabled for reduced-motion users; CSS also removes sliding transitions.
+- Inactive slides are inert and hidden from assistive technology. Manual slide changes are announced; automatic changes are not.
+- Skill filters are native buttons with pressed states and an announced result count.
+- Main navigation, skip link, visible focus styles, image descriptions, semantic headings, and responsive layouts are included.
+- The separate media gallery is manual, with topic filtering, thumbnails, native-dialog lightbox, Escape-to-close, and focus restoration.
 
-## Add publications and talks
+## Checks and limitations
 
-Populate the arrays in `content/publications.json`. Both use entries such as:
+`npm run check` validates generated routes, local links and fragments, unique IDs, assets, project and gallery metadata, PDFs, JavaScript syntax, and the two homepage carousel structures. Checks are run at `/` and `/portfolio-test` before packaging.
 
-```json
-{
-  "title": "Verified title",
-  "authors": "Verified author list",
-  "year": "2026",
-  "venue": "Journal or conference name",
-  "status": "Preprint / Published / Talk / Poster",
-  "url": "https://VERIFIED_LINK"
-}
-```
-
-Do not paste example URLs literally. Leave `url` null if unavailable. The page clearly marks empty publication and talk lists.
-
-## Design and accessibility
-
-Light paper background, navy typography, muted teal accent, editorial serif headings, restrained borders, and scientific-media-first presentation. Main layouts switch at 1050px and 760px. Keyboard focus is visible; semantic landmarks and a skip link are included. The lightbox uses native dialog focus containment. Large media has a stable stage size and uses contain sizing. Fonts are system fonts, requiring no external requests.
-
-## Verification and remaining review
-
-- Generation completed successfully for 14 pages plus the 404 document.
-- Local navigation/asset references, unique project IDs, and gallery metadata passed checks at `/` and `/portfolio-test`.
-- Gallery JavaScript passed syntax checking.
-- Responsive breakpoints and interaction handlers were reviewed in source. Browser visual QA, touch gestures, screen-reader behavior, and real-media playback have **not** been exercised in this environment.
-- GitHub Actions deployment must be run in your GitHub repository; it has not been run here.
-- Original graphics, CVs, contact details, publication records, repository links, and verified results still need to be supplied.
-
-A practical browser review: check desktop and mobile widths, 200% text zoom, keyboard navigation, thumbnail selection, topic filtering, lightbox Escape/focus return, reduced-motion mode, video pause on slide change, and refresh on a project URL. Once assets are added, check their actual size, legibility, and playback.
+These are static/build checks, not a browser or screen-reader audit. Browser layout, actual swipe gestures, live external links/CDN availability, and GitHub Actions deployment are not claimed as tested. Before publishing, review desktop/mobile layouts and replace the demo portrait and workflow schematics with your own media when ready.

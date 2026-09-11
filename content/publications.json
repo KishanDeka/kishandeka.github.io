@@ -1,4 +1,19 @@
 {
-  "publications": [],
-  "talks": []
+  "publications": [
+    {"year":"2026","status":"Accepted in A&A · February 2026","title":"Galactic foreground residual biases in CMB lensing convergence reconstruction and delensing of B-mode maps","authors":"Deka, K. & Bielewicz, P.","venue":"Astronomy & Astrophysics","url":"https://doi.org/10.1051/0004-6361/202557977"},
+    {"year":"2026","status":"Preprint · March 2026","title":"Sterile neutrino Dark Matter in the minimal Dirac Seesaw","authors":"Adhikary, J., Batra, A., Deka, K. & Joaquim, F. R.","venue":"arXiv:2603.20145","url":"https://doi.org/10.48550/arXiv.2603.20145"},
+    {"year":"2020","status":"Journal article","title":"Viscosity, nonconformal equation of state, and sound velocity in Landau hydrodynamics","authors":"Biswas, D., Deka, K., Jaiswal, A. & Roy, S.","venue":"Physical Review C 102, 014912","url":"https://doi.org/10.1103/PhysRevC.102.014912"}
+  ],
+  "talks": [
+    {"year":"2026","status":"Invited talk","title":"Challenges for CMB B-Modes: Lensing Reconstruction, Subtraction, and Diffuse Foregrounds","venue":"SISSA · Trieste, Italy"},
+    {"year":"2025","status":"Guest seminar","title":"Biases in CMB lensing convergence reconstruction and optimal delensing of B-modes with next-generation surveys","venue":"LAM · Marseille, France"},
+    {"year":"2025","status":"Conference talk","title":"Optimal delensing of CMB B modes with stage-IV CMB and galaxy survey","venue":"XI Meeting on Fundamental Cosmology · Santander, Spain"},
+    {"year":"2025","status":"Conference talk","title":"Delensing with tomographic cross-correlation between LSST and CMB-S4 survey","venue":"LSST@Europe7 · Poznań, Poland"},
+    {"year":"2025","status":"Conference talk","title":"Delensing of CMB B-modes with tomographic cross-correlation between LSST and CMB-S4 survey","venue":"DarkMap · Budapest, Hungary"},
+    {"year":"2025","status":"Invited talk","title":"Impact of galactic foregrounds in delensing of CMB B-mode polarisation","venue":"CAMK PAN · Warsaw, Poland"},
+    {"year":"2025","status":"Conference talk","title":"Impact of galactic foregrounds on delensing of CMB maps","venue":"Cosmoverse@Istanbul · Turkey"},
+    {"year":"2024","status":"Alumni talk","title":"Galactic foreground bias in CMB lensing reconstruction","venue":"SPS Seminar, NISER · Bhubaneswar, India"},
+    {"year":"2023","status":"Conference talk","title":"Galactic foreground bias in CMB lensing convergence reconstruction","venue":"Cosmology in Miramare · Trieste, Italy"},
+    {"year":"","status":"Seminar","title":"PSF modeling for the WALOP instrument","venue":"Astrophysics (BP4), NCBJ · Warsaw, Poland"}
+  ]
 }
