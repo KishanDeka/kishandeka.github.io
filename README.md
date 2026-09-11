@@ -152,7 +152,7 @@ Types: `image`, `gif`, or `video` (`mp4` and `webm` also accepted). Prefer video
 
 ## Motion and accessibility
 
-- The two homepage carousels start paused and run independently. Select Play to advance every 5.5 seconds while visible and not hovered or keyboard-focused.
+- The two homepage carousels advance automatically every 5.5 seconds. Hovering or keyboard focus pauses a slider; leaving resumes it unless manually paused. Reduced-motion users start paused.
 - Previous/next buttons, slide selectors, left/right keyboard navigation, horizontal touch swipe, and explicit Play/Pause controls are included.
 - Autoplay starts disabled for reduced-motion users; CSS also removes sliding transitions.
 - Inactive slides are inert and hidden from assistive technology. Manual slide changes are announced; automatic changes are not.
@@ -166,10 +166,10 @@ Types: `image`, `gif`, or `video` (`mp4` and `webm` also accepted). Prefer video
 
 These are static/build checks, not a browser or screen-reader audit. Browser layout, actual swipe gestures, live external links/CDN availability, and GitHub Actions deployment are not claimed as tested. Before publishing, review desktop/mobile layouts and replace the demo portrait and workflow schematics with your own media when ready.
 
-## Dark editorial edition
+## Light plum editorial edition
 
-The entire site uses charcoal backgrounds, ivory typography, and a muted gold accent, with a serif editorial hierarchy and numbered research/project showcases. Theme overrides are grouped at the end of `dist/assets/style.css`.
+The entire site uses cool white backgrounds, blue-gray surfaces, charcoal typography, and a deep plum accent, with a serif editorial hierarchy and numbered research/project showcases. Theme overrides are grouped at the end of `dist/assets/style.css`.
 
 Education, technical skills, and teaching details were updated from the CV attached on 11 September 2026. The academic CV download is that exact supplied PDF. Existing industry resume and professional links are retained. Skill tiles use local typographic marks and do not require external images. The existing portrait remains explicitly labeled as a demo, not a likeness.
 
-Both profile sliders start paused. Controls include previous/next, slide selectors, arrow keys, touch swipe, and optional Play/Pause. Skills can be filtered by Languages, Libraries, or Tools.
+Both profile sliders start automatically, except when reduced motion is requested. They pause on hover and resume after the pointer leaves. Controls include previous/next, slide selectors, arrow keys, touch swipe, and optional Play/Pause. Skills can be filtered by Languages, Libraries, or Tools.
