@@ -173,3 +173,9 @@ The entire site uses cool white backgrounds, blue-gray surfaces, charcoal typogr
 Education, technical skills, and teaching details were updated from the CV attached on 11 September 2026. The academic CV download is that exact supplied PDF. Existing industry resume and professional links are retained. Skill tiles use local typographic marks and do not require external images. The existing portrait remains explicitly labeled as a demo, not a likeness.
 
 Both profile sliders start automatically, except when reduced motion is requested. They pause on hover and resume after the pointer leaves. Controls include previous/next, slide selectors, arrow keys, touch swipe, and optional Play/Pause. Skills can be filtered by Languages, Libraries, or Tools.
+
+## Autoplay and cache update
+
+CSS and JavaScript URLs include content hashes so changed assets receive new browser cache keys. Mouse focus no longer prevents autoplay resuming after hover; visible keyboard focus still pauses the carousel. Run `node scripts/check-carousel.mjs` for deterministic timer and interaction checks using a DOM harness (not a browser audit).
+
+Upload the entire project and wait for the GitHub Pages workflow to finish. Hard-refresh once if your browser still displays a previously cached HTML page.

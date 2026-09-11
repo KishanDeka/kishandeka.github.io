@@ -38,9 +38,9 @@
     dots.forEach((dot,i) => dot.addEventListener('click', () => { index=i; render(true); schedule(); }));
     play.addEventListener('click', () => { paused=!paused; playLabel(); schedule(); });
     root.addEventListener('mouseenter', () => { hovered=true; schedule(); });
-    root.addEventListener('mouseleave', () => { hovered=false; schedule(); });
-    root.addEventListener('focusin', () => { focused=true; schedule(); });
-    root.addEventListener('focusout', event => { focused=root.contains(event.relatedTarget); schedule(); });
+    root.addEventListener('mouseleave', () => { hovered=false; focused=!!root.querySelector(':focus-visible'); schedule(); });
+    root.addEventListener('focusin', () => { focused=!!root.querySelector(':focus-visible'); schedule(); });
+    root.addEventListener('focusout', event => { focused=!!event.relatedTarget && root.contains(event.relatedTarget) && event.relatedTarget.matches(':focus-visible'); schedule(); });
     root.addEventListener('keydown', event => {
       if (event.target.closest('video') || !['ArrowLeft','ArrowRight'].includes(event.key)) return;
       event.preventDefault();
