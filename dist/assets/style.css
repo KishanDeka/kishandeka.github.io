@@ -278,6 +278,8 @@ nav a[aria-current] {
   line-height: 1.2;
   letter-spacing: -0.025em;
   margin: 14px 0 20px;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .lead {
