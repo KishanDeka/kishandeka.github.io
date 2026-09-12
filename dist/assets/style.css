@@ -282,6 +282,10 @@ nav a[aria-current] {
   text-align-last: left;
 }
 
+.page-heading p + p {
+  margin-top: 2em;
+}
+
 .lead {
   font-size: 1.0625rem;
   line-height: 1.85;
