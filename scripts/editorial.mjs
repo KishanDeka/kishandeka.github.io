@@ -420,7 +420,7 @@ renderPage(
   'publications/',
   'Publications & Talks',
   'Selected papers, conference presentations, and invited seminars.',
-  `${renderPageHeading('PUBLICATIONS & TALKS', 'Publications & Talks', 'Papers, invited seminars, and conference presentations in cosmology and theoretical physics.')}
+  `${renderPageHeading('PUBLICATIONS & TALKS', 'Publications & talks', `I have published first-author and co-author papers in cosmology, astronomy and theoretical physics. I have presented invited seminars and conference presentation infront of international audiences.`)}
    <div class="page-jumps">
      <a href="#papers">Publications</a>
      <a href="#talks">Talks & seminars</a>
@@ -428,7 +428,7 @@ renderPage(
    <section class="content-section" id="papers">
      <h2>Selected publications</h2>
      ${renderRecordList(publications.publications)}
-     <p class="source-note">Publication status follows the supplied academic CV.</p>
+     <!-- <p class="source-note">Publication status follows the supplied academic CV.</p> -->
    </section>
    <section class="content-section" id="talks">
      <h2>Talks & seminars</h2>
