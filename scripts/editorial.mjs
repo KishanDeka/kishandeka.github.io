@@ -251,7 +251,7 @@ const NAV_ITEMS = [
   ['about/', 'About'],
   ['research/', 'Research'],
   ['projects/', 'Projects'],
-  ['publications/', 'Publications & talks'],
+  ['publications/', 'Publications & Talks'],
   ['contact/', 'Contact']
 ];
 
@@ -420,7 +420,7 @@ renderPage(
   'publications/',
   'Publications & Talks',
   'Selected papers, conference presentations, and invited seminars.',
-  `${renderPageHeading('PUBLICATIONS & TALKS', 'Publications & talks', 'Papers, invited seminars, and conference presentations in cosmology and theoretical physics.')}
+  `${renderPageHeading('PUBLICATIONS & TALKS', 'Publications & Talks', 'Papers, invited seminars, and conference presentations in cosmology and theoretical physics.')}
    <div class="page-jumps">
      <a href="#papers">Publications</a>
      <a href="#talks">Talks & seminars</a>
@@ -490,7 +490,7 @@ renderPage(
    <section class="content-section" id="skills">
      <div class="section-heading">
        <h2>Technical expertise</h2>
-       <span class="source-note">Languages, packages & tools from my academic CV</span>
+       <!-- <span class="source-note">Languages, packages & tools from my academic CV</span> -->
      </div>
      ${skillGridMarkup}
    </section>
