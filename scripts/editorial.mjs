@@ -475,9 +475,10 @@ renderPage(
   'about/',
   'About',
   'Education, experience, technical expertise, academic CV, and industry resume.',
-  `${renderPageHeading('ABOUT', 'About', 'I’m a researcher in cosmology and astrophysics with 6+ years of Python experience, working at the intersection of physics, statistical inference, and large-scale data analysis. My PhD focuses on weak gravitational lensing of the cosmic microwave background, Galactic foregrounds, B-mode delensing, and cross-correlations with large-scale structure. I build end-to-end simulations and analysis pipelines to understand both the signal and the uncertainty behind a result. 
+  `${renderPageHeading('ABOUT', 'Background', `I’m a researcher in cosmology and astrophysics with 6+ years of Python experience, working at the intersection of physics, statistical inference, and large-scale data analysis. My PhD focuses on weak gravitational lensing of the cosmic microwave background, Galactic foregrounds, B-mode delensing, and cross-correlations with large-scale structure. I build end-to-end simulations and analysis pipelines to understand both the signal and the uncertainty behind a result. 
   
-   I am also developing projects in data analytics, machine learning, and data engineering. I bring a strong analytical background, careful debugging, and experience communicating technical findings to international audiences.')}
+   I am also developing projects in data analytics, machine learning, and data engineering. I bring a strong analytical background, careful debugging, and experience communicating technical findings to international audiences.`
+   )}
    <section class="content-section">
      <h2>Education</h2>
      ${renderTimeline(about.education)}
