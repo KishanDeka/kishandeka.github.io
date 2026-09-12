@@ -283,7 +283,9 @@ nav a[aria-current] {
 }
 
 .page-heading p + p {
-  margin-top: 1.5em;
+  margin-top: 1.em;
+  text-align: justify;
+  text-align-last: left;
 }
 
 .lead {
