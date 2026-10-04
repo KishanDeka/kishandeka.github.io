@@ -51,4 +51,17 @@
     "alt": "Five sampled positions on a 4096 by 4096 CCD and corresponding PSF images labeled PSF-2, PSF-3, PSF-1, PSF-5, and PSF-4.",
     "caption": "Point-spread functions at five detector positions, illustrating spatial variation across the CCD."
   }
+  {
+    "id": "disasterlens",
+    "title": "Natural disaster classification",
+    "project": "disasterlens",
+    "label": "disaster",
+    "category": "Imaging",
+    "type": "image",
+    "src": "assets/media/disaster_inference.png",
+    "thumbnail": "assets/media/ccd_psf_new.png",
+    "poster": null,
+    "alt": "Classification of four aerial images chosen randomly from the AIDERv2 test dataset.",
+    "caption": "Classification four random test image from AIDERv2 aerial imagery dataset."
+  }
 ]
